@@ -31,6 +31,13 @@ NS_ASSUME_NONNULL_BEGIN
 #define MPLogDebug(s,...) __FB_PRAGMA_PUSH_NO_FORMAT_WARNINGS [MPLogger logAtLevel:MPLogLevelDebug file:__FILE__ lineNumber:__LINE__ format:(s), ##__VA_ARGS__] __FB_PRAGMA_POP_NO_FORMAT_WARNINGS
 #define MPLogVerbose(s,...) __FB_PRAGMA_PUSH_NO_FORMAT_WARNINGS [MPLogger logAtLevel:MPLogLevelVerbose file:__FILE__ lineNumber:__LINE__ format:(s), ##__VA_ARGS__] __FB_PRAGMA_POP_NO_FORMAT_WARNINGS
 
+
+#ifdef DEBUG
+#define MPDebugLog(s, ...) NSLog(s, ##__VA_ARGS__)
+#else
+#define MPDebugLog(s, ...)
+#endif
+
 // Logs only for Debug builds
 #ifdef DEBUG
 #define MPLogDebugOnly(s,...) __FB_PRAGMA_PUSH_NO_FORMAT_WARNINGS [MPLogger logAtLevel:MPLogLevelNotification file:__FILE__ lineNumber:__LINE__ format:(s), ##__VA_ARGS__] __FB_PRAGMA_POP_NO_FORMAT_WARNINGS

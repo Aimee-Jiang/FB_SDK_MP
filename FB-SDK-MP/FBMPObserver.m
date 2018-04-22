@@ -20,6 +20,7 @@
 #import "MPVideoLogger.h"
 #import "MPVideoLoggingEvent.h"
 #import "MPDynamicFrameworkLoader.h"
+#import "MPLogger.h"
 
 //static NSString * const kToken = @"brightcove";
 static NSString * const kToken = @"_nc_client_token=";
@@ -98,7 +99,7 @@ static FBMPObserver* _instance = nil;
   }
   if (self.state != kStateTypeComplete) {
     [self.mpLogger registerComplete:[self.playerItem currentTime]];
-    NSLog(@"MP Complete playing at time: %f", mpsdk_dfl_CMTimeGetSeconds([self.playerItem currentTime]));
+    MPDebugLog(@"MP Complete playing at time: %f", mpsdk_dfl_CMTimeGetSeconds([self.playerItem currentTime]));
     self.state = kStateTypeComplete;
   }
 }
@@ -133,7 +134,7 @@ static FBMPObserver* _instance = nil;
         self.continued = YES;
       }
       [self.mpLogger registerResume:[self.playerItem currentTime]];
-      NSLog(@"MP(notification) Resume to play at time: %f", mpsdk_dfl_CMTimeGetSeconds([self.playerItem currentTime]));
+      MPDebugLog(@"MP(notification) Resume to play at time: %f", mpsdk_dfl_CMTimeGetSeconds([self.playerItem currentTime]));
       self.state = kStateTypeResume;
     }
   } else if (self.state == kStateTypeJump){
@@ -156,7 +157,7 @@ static FBMPObserver* _instance = nil;
   // skip button
   if ([object isKindOfClass:UIControl.class]) {
     if ([keyPath isEqualToString:@"highlighted"]) {
-      NSLog(@"MP Skip");
+      MPDebugLog(@"MP Skip");
       [self.mpLogger registerSkip:[self.playerItem currentTime]];
     }
     return;
@@ -176,13 +177,13 @@ static FBMPObserver* _instance = nil;
   }
   NSTimeInterval currentTime = mpsdk_dfl_CMTimeGetSeconds([self.playerItem currentTime]);
   [self addProgressTimeObserverIfNot];
-  //  NSLog(@"MP(observer) called at: %f", currentTime);
+  //  MPDebugLog(@"MP(observer) called at: %f", currentTime);
   if ([keyPath isEqualToString:@"rate"]) {
     if (currentTime <= 0.000000 || [self.player rate]) {
       if (self.state == kStateTypePause) {
         self.state = kStateTypeResume;
         [self.mpLogger registerResume:[self.playerItem currentTime]];
-        NSLog(@"MP(observer) Resume to play at: %f", currentTime);
+        MPDebugLog(@"MP(observer) Resume to play at: %f", currentTime);
       }
       [NSTimer scheduledTimerWithTimeInterval:0.9
                                        target:self
@@ -203,15 +204,15 @@ static FBMPObserver* _instance = nil;
   
   if ([keyPath isEqualToString:@"muted"]) {
     if (self.player.isMuted) {
-      NSLog(@"audio is muted");
+      MPDebugLog(@"audio is muted");
       self.state = kStateTypeMute;
     }
     else {
-      NSLog(@"audio is unmuted");
+      MPDebugLog(@"audio is unmuted");
       self.state = kStateTypeUnmute;
     }
   } else if ([keyPath isEqualToString:@"volume"]){
-    NSLog(@"the volume is changed to %f", self.player.volume);
+    MPDebugLog(@"the volume is changed to %f", self.player.volume);
     self.state = kStateTypeChangeVolume;
   }
 }
@@ -221,12 +222,12 @@ static FBMPObserver* _instance = nil;
   NSTimeInterval scheduledTime = [[[timer userInfo] objectForKey:@"scheduledTime"] doubleValue];
   if (self.state == kStateTypeDoubleJump || self.seeking) {
     NSTimeInterval scheduledTime = [[[timer userInfo] objectForKey:@"scheduledTime"] doubleValue];
-    NSLog(@"MP seek start at time: %f", scheduledTime);
+    MPDebugLog(@"MP seek start at time: %f", scheduledTime);
     self.state = kStateTypeSeekStart;
     self.seeking = !self.seeking;
     [self.mpLogger registerSeekStart:mpsdk_dfl_CMTimeMakeWithSeconds(scheduledTime, 1000)];
   } else if ((self.state == kStateTypeSeekEnd || self.state == kStateTypeResume) && !self.continued) {
-    NSLog(@"MP pause at time: %f",scheduledTime);
+    MPDebugLog(@"MP pause at time: %f",scheduledTime);
     self.state = kStateTypePause;
     [self.mpLogger registerPause: mpsdk_dfl_CMTimeMakeWithSeconds(scheduledTime, 1000)];
   }
@@ -236,7 +237,7 @@ static FBMPObserver* _instance = nil;
 - (void)checkSeekEnd:(NSTimer *)timer {
   if (self.state == kStateTypeDoubleJump || self.state == kStateTypeSeekStart) {
     NSTimeInterval scheduledTime = [[[timer userInfo] objectForKey:@"scheduledTime"] doubleValue];
-    NSLog(@"MP seek end at time: %f", scheduledTime);
+    MPDebugLog(@"MP seek end at time: %f", scheduledTime);
     self.state = kStateTypeSeekEnd;
     self.seeking = !self.seeking;
     [self.mpLogger registerSeekEnd:mpsdk_dfl_CMTimeMakeWithSeconds(scheduledTime, 1000)];

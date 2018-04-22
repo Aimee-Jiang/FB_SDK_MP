@@ -7,17 +7,250 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AFF6FEF9208AA719007FC3FA /* FB_SDK_MP.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FEF7208AA719007FC3FA /* FB_SDK_MP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF3C69E208ABAA60033E05F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF3C69D208ABAA60033E05F /* AppDelegate.m */; };
+		AFF3C6A1208ABAA60033E05F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF3C6A0208ABAA60033E05F /* ViewController.m */; };
+		AFF3C6A4208ABAA60033E05F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFF3C6A2208ABAA60033E05F /* Main.storyboard */; };
+		AFF3C6A6208ABAA60033E05F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF3C6A5208ABAA60033E05F /* Assets.xcassets */; };
+		AFF3C6A9208ABAA60033E05F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFF3C6A7208ABAA60033E05F /* LaunchScreen.storyboard */; };
+		AFF3C6AC208ABAA60033E05F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF3C6AB208ABAA60033E05F /* main.m */; };
+		AFF3C6B0208ABB5B0033E05F /* FB_SDK_MP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF6FEF4208AA719007FC3FA /* FB_SDK_MP.framework */; };
+		AFF3C6B1208ABB5B0033E05F /* FB_SDK_MP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFF6FEF4208AA719007FC3FA /* FB_SDK_MP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AFF3C6B6208BD3850033E05F /* FB_SDK_MP.podspec in Resources */ = {isa = PBXBuildFile; fileRef = AFF3C6B5208BD3840033E05F /* FB_SDK_MP.podspec */; };
+		AFF3C6B7208BD3850033E05F /* FB_SDK_MP.podspec in Resources */ = {isa = PBXBuildFile; fileRef = AFF3C6B5208BD3840033E05F /* FB_SDK_MP.podspec */; };
+		AFF60002208AACC2007FC3FA /* FB_SDK_MP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF6FEF4208AA719007FC3FA /* FB_SDK_MP.framework */; };
+		AFF60003208AACC2007FC3FA /* FB_SDK_MP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFF6FEF4208AA719007FC3FA /* FB_SDK_MP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AFF6FF48208AA880007FC3FA /* MPSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FEFF208AA871007FC3FA /* MPSettings.m */; };
+		AFF6FF49208AA880007FC3FA /* MPConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF00208AA871007FC3FA /* MPConfigManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF4A208AA880007FC3FA /* MPQualityRule.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF01208AA871007FC3FA /* MPQualityRule.m */; };
+		AFF6FF4B208AA880007FC3FA /* MPMonotonicTime.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF02208AA871007FC3FA /* MPMonotonicTime.m */; };
+		AFF6FF4C208AA880007FC3FA /* MPPerformanceMetrics.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF03208AA872007FC3FA /* MPPerformanceMetrics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF4D208AA880007FC3FA /* MPQualityViewabilityMeasurement.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF04208AA872007FC3FA /* MPQualityViewabilityMeasurement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF4E208AA880007FC3FA /* MPQualityStatistics.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF05208AA872007FC3FA /* MPQualityStatistics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF4F208AA880007FC3FA /* MPDefines+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF06208AA872007FC3FA /* MPDefines+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF50208AA880007FC3FA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFF6FF07208AA872007FC3FA /* Info.plist */; };
+		AFF6FF51208AA880007FC3FA /* MPLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF08208AA872007FC3FA /* MPLogger.m */; };
+		AFF6FF52208AA880007FC3FA /* MPNotificationCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF09208AA872007FC3FA /* MPNotificationCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF53208AA880007FC3FA /* MPUtilityFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF0A208AA872007FC3FA /* MPUtilityFunctions.m */; };
+		AFF6FF54208AA880007FC3FA /* MPEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF0B208AA873007FC3FA /* MPEvent.m */; };
+		AFF6FF55208AA880007FC3FA /* MPVideoLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF0C208AA873007FC3FA /* MPVideoLogger.m */; };
+		AFF6FF56208AA880007FC3FA /* MPDefines+Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF0D208AA873007FC3FA /* MPDefines+Internal.m */; };
+		AFF6FF57208AA880007FC3FA /* MPDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF0E208AA873007FC3FA /* MPDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF58208AA880007FC3FA /* MPVideoLoggingEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF0F208AA873007FC3FA /* MPVideoLoggingEvent.m */; };
+		AFF6FF59208AA880007FC3FA /* MPUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF10208AA873007FC3FA /* MPUtility.m */; };
+		AFF6FF5A208AA880007FC3FA /* MPBackgroundStateManaging.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF11208AA873007FC3FA /* MPBackgroundStateManaging.m */; };
+		AFF6FF5B208AA880007FC3FA /* MPEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF12208AA873007FC3FA /* MPEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF5C208AA880007FC3FA /* MPDebugLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF13208AA874007FC3FA /* MPDebugLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF5D208AA880007FC3FA /* MPDebugLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF14208AA874007FC3FA /* MPDebugLogging.m */; };
+		AFF6FF5E208AA880007FC3FA /* MPEventToken.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF15208AA874007FC3FA /* MPEventToken.m */; };
+		AFF6FF5F208AA880007FC3FA /* MPQualityStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF16208AA874007FC3FA /* MPQualityStatistics.m */; };
+		AFF6FF60208AA880007FC3FA /* MPURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF17208AA874007FC3FA /* MPURLSession.m */; };
+		AFF6FF61208AA880007FC3FA /* MPVideoURLWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF18208AA874007FC3FA /* MPVideoURLWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF62208AA880007FC3FA /* MPqualityTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF19208AA875007FC3FA /* MPqualityTest.m */; };
+		AFF6FF63208AA880007FC3FA /* MPEventManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF1A208AA875007FC3FA /* MPEventManager.mm */; };
+		AFF6FF64208AA880007FC3FA /* MPSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF1B208AA875007FC3FA /* MPSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF65208AA880007FC3FA /* MPTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF1C208AA875007FC3FA /* MPTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF66208AA880007FC3FA /* MPEndToEnd.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF1D208AA875007FC3FA /* MPEndToEnd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF67208AA880007FC3FA /* MPBackgroundStateManaging.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF1E208AA876007FC3FA /* MPBackgroundStateManaging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF68208AA880007FC3FA /* MPDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF1F208AA876007FC3FA /* MPDevice.m */; };
+		AFF6FF69208AA880007FC3FA /* MPQualityRule.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF20208AA876007FC3FA /* MPQualityRule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF6A208AA880007FC3FA /* MPUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF21208AA877007FC3FA /* MPUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF6B208AA880007FC3FA /* MPQualityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF22208AA877007FC3FA /* MPQualityManager.m */; };
+		AFF6FF6C208AA880007FC3FA /* FBMPObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF23208AA877007FC3FA /* FBMPObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF6D208AA880007FC3FA /* MPVideoURLWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF24208AA878007FC3FA /* MPVideoURLWrapper.m */; };
+		AFF6FF6E208AA880007FC3FA /* MPBackgroundStateManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF25208AA878007FC3FA /* MPBackgroundStateManager.mm */; };
+		AFF6FF6F208AA880007FC3FA /* MPMonotonicTime.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF26208AA878007FC3FA /* MPMonotonicTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF70208AA880007FC3FA /* MPDynamicFrameworkLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF27208AA879007FC3FA /* MPDynamicFrameworkLoader.m */; };
+		AFF6FF71208AA880007FC3FA /* MPLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF28208AA879007FC3FA /* MPLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF72208AA880007FC3FA /* MPConcurrentQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF29208AA879007FC3FA /* MPConcurrentQueue.m */; };
+		AFF6FF73208AA880007FC3FA /* MPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF2A208AA87A007FC3FA /* MPDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF74208AA880007FC3FA /* FBMPObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF2B208AA87A007FC3FA /* FBMPObserver.m */; };
+		AFF6FF75208AA880007FC3FA /* MPSettings+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF2C208AA87A007FC3FA /* MPSettings+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF76208AA880007FC3FA /* MPEventToken.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF2D208AA87A007FC3FA /* MPEventToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF77208AA880007FC3FA /* MPNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF2E208AA87B007FC3FA /* MPNotificationCenter.m */; };
+		AFF6FF78208AA880007FC3FA /* MPVideoLoggingEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF2F208AA87B007FC3FA /* MPVideoLoggingEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF79208AA880007FC3FA /* MPQualityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF30208AA87B007FC3FA /* MPQualityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF7A208AA880007FC3FA /* MPConcurrentArray.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF31208AA87B007FC3FA /* MPConcurrentArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF7B208AA880007FC3FA /* MPConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF32208AA87B007FC3FA /* MPConfigManager.m */; };
+		AFF6FF7C208AA880007FC3FA /* MPPerformanceMetrics.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF33208AA87C007FC3FA /* MPPerformanceMetrics.m */; };
+		AFF6FF7D208AA880007FC3FA /* MPBackgroundStateManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF34208AA87C007FC3FA /* MPBackgroundStateManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF7E208AA880007FC3FA /* MPEndToEnd.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF35208AA87C007FC3FA /* MPEndToEnd.m */; };
+		AFF6FF7F208AA880007FC3FA /* MPDatabaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF36208AA87C007FC3FA /* MPDatabaseManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF80208AA880007FC3FA /* MPConcurrentArray.mm in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF37208AA87D007FC3FA /* MPConcurrentArray.mm */; };
+		AFF6FF81208AA880007FC3FA /* MPConcurrentQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF38208AA87D007FC3FA /* MPConcurrentQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF82208AA880007FC3FA /* MPVideoLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF39208AA87D007FC3FA /* MPVideoLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF83208AA880007FC3FA /* MPScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF3A208AA87D007FC3FA /* MPScreen.m */; };
+		AFF6FF84208AA880007FC3FA /* MPTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF3B208AA87E007FC3FA /* MPTimer.m */; };
+		AFF6FF85208AA880007FC3FA /* MPDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF3C208AA87E007FC3FA /* MPDatabaseManager.m */; };
+		AFF6FF86208AA880007FC3FA /* MPQualityViewabilityMeasurement.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF3D208AA87E007FC3FA /* MPQualityViewabilityMeasurement.m */; };
+		AFF6FF87208AA880007FC3FA /* MPQualityMetric.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF3E208AA87E007FC3FA /* MPQualityMetric.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF88208AA880007FC3FA /* MPURLSession.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF3F208AA87F007FC3FA /* MPURLSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF89208AA880007FC3FA /* MPUtilityFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF40208AA87F007FC3FA /* MPUtilityFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF8A208AA880007FC3FA /* MPDynamicFrameworkLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF41208AA87F007FC3FA /* MPDynamicFrameworkLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF8B208AA880007FC3FA /* MPScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF42208AA87F007FC3FA /* MPScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF8C208AA880007FC3FA /* FB_SDK_MP.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF43208AA87F007FC3FA /* FB_SDK_MP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF8D208AA880007FC3FA /* MPEventManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF44208AA880007FC3FA /* MPEventManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF8E208AA880007FC3FA /* MPAvailability.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF45208AA880007FC3FA /* MPAvailability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF8F208AA880007FC3FA /* MPQualityMetric.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF46208AA880007FC3FA /* MPQualityMetric.m */; };
+		AFF6FF90208AA880007FC3FA /* MPqualityTest.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF47208AA880007FC3FA /* MPqualityTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AFF3C6B2208ABB5C0033E05F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFF6FEEB208AA719007FC3FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFF6FEF3208AA719007FC3FA;
+			remoteInfo = "FB-SDK-MP";
+		};
+		AFF60004208AACC2007FC3FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFF6FEEB208AA719007FC3FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFF6FEF3208AA719007FC3FA;
+			remoteInfo = "FB-SDK-MP";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AFF3C6B4208ABB5C0033E05F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AFF3C6B1208ABB5B0033E05F /* FB_SDK_MP.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF60006208AACC3007FC3FA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AFF60003208AACC2007FC3FA /* FB_SDK_MP.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		AFF3C69A208ABAA60033E05F /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFF3C69C208ABAA60033E05F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AFF3C69D208ABAA60033E05F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AFF3C69F208ABAA60033E05F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AFF3C6A0208ABAA60033E05F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AFF3C6A3208ABAA60033E05F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFF3C6A5208ABAA60033E05F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFF3C6A8208ABAA60033E05F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFF3C6AA208ABAA60033E05F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFF3C6AB208ABAA60033E05F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AFF3C6B5208BD3840033E05F /* FB_SDK_MP.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FB_SDK_MP.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AFF6FEF4208AA719007FC3FA /* FB_SDK_MP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FB_SDK_MP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFF6FEF7208AA719007FC3FA /* FB_SDK_MP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FB_SDK_MP.h; sourceTree = "<group>"; };
-		AFF6FEF8208AA719007FC3FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFF6FEFF208AA871007FC3FA /* MPSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPSettings.m; sourceTree = "<group>"; };
+		AFF6FF00208AA871007FC3FA /* MPConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPConfigManager.h; sourceTree = "<group>"; };
+		AFF6FF01208AA871007FC3FA /* MPQualityRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPQualityRule.m; sourceTree = "<group>"; };
+		AFF6FF02208AA871007FC3FA /* MPMonotonicTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPMonotonicTime.m; sourceTree = "<group>"; };
+		AFF6FF03208AA872007FC3FA /* MPPerformanceMetrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPPerformanceMetrics.h; sourceTree = "<group>"; };
+		AFF6FF04208AA872007FC3FA /* MPQualityViewabilityMeasurement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPQualityViewabilityMeasurement.h; sourceTree = "<group>"; };
+		AFF6FF05208AA872007FC3FA /* MPQualityStatistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPQualityStatistics.h; sourceTree = "<group>"; };
+		AFF6FF06208AA872007FC3FA /* MPDefines+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MPDefines+Internal.h"; sourceTree = "<group>"; };
+		AFF6FF07208AA872007FC3FA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFF6FF08208AA872007FC3FA /* MPLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLogger.m; sourceTree = "<group>"; };
+		AFF6FF09208AA872007FC3FA /* MPNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPNotificationCenter.h; sourceTree = "<group>"; };
+		AFF6FF0A208AA872007FC3FA /* MPUtilityFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPUtilityFunctions.m; sourceTree = "<group>"; };
+		AFF6FF0B208AA873007FC3FA /* MPEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPEvent.m; sourceTree = "<group>"; };
+		AFF6FF0C208AA873007FC3FA /* MPVideoLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPVideoLogger.m; sourceTree = "<group>"; };
+		AFF6FF0D208AA873007FC3FA /* MPDefines+Internal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MPDefines+Internal.m"; sourceTree = "<group>"; };
+		AFF6FF0E208AA873007FC3FA /* MPDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDevice.h; sourceTree = "<group>"; };
+		AFF6FF0F208AA873007FC3FA /* MPVideoLoggingEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPVideoLoggingEvent.m; sourceTree = "<group>"; };
+		AFF6FF10208AA873007FC3FA /* MPUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPUtility.m; sourceTree = "<group>"; };
+		AFF6FF11208AA873007FC3FA /* MPBackgroundStateManaging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBackgroundStateManaging.m; sourceTree = "<group>"; };
+		AFF6FF12208AA873007FC3FA /* MPEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPEvent.h; sourceTree = "<group>"; };
+		AFF6FF13208AA874007FC3FA /* MPDebugLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDebugLogging.h; sourceTree = "<group>"; };
+		AFF6FF14208AA874007FC3FA /* MPDebugLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDebugLogging.m; sourceTree = "<group>"; };
+		AFF6FF15208AA874007FC3FA /* MPEventToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPEventToken.m; sourceTree = "<group>"; };
+		AFF6FF16208AA874007FC3FA /* MPQualityStatistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPQualityStatistics.m; sourceTree = "<group>"; };
+		AFF6FF17208AA874007FC3FA /* MPURLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPURLSession.m; sourceTree = "<group>"; };
+		AFF6FF18208AA874007FC3FA /* MPVideoURLWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPVideoURLWrapper.h; sourceTree = "<group>"; };
+		AFF6FF19208AA875007FC3FA /* MPqualityTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPqualityTest.m; sourceTree = "<group>"; };
+		AFF6FF1A208AA875007FC3FA /* MPEventManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MPEventManager.mm; sourceTree = "<group>"; };
+		AFF6FF1B208AA875007FC3FA /* MPSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPSettings.h; sourceTree = "<group>"; };
+		AFF6FF1C208AA875007FC3FA /* MPTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPTimer.h; sourceTree = "<group>"; };
+		AFF6FF1D208AA875007FC3FA /* MPEndToEnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPEndToEnd.h; sourceTree = "<group>"; };
+		AFF6FF1E208AA876007FC3FA /* MPBackgroundStateManaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBackgroundStateManaging.h; sourceTree = "<group>"; };
+		AFF6FF1F208AA876007FC3FA /* MPDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDevice.m; sourceTree = "<group>"; };
+		AFF6FF20208AA876007FC3FA /* MPQualityRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPQualityRule.h; sourceTree = "<group>"; };
+		AFF6FF21208AA877007FC3FA /* MPUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPUtility.h; sourceTree = "<group>"; };
+		AFF6FF22208AA877007FC3FA /* MPQualityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPQualityManager.m; sourceTree = "<group>"; };
+		AFF6FF23208AA877007FC3FA /* FBMPObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBMPObserver.h; sourceTree = "<group>"; };
+		AFF6FF24208AA878007FC3FA /* MPVideoURLWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPVideoURLWrapper.m; sourceTree = "<group>"; };
+		AFF6FF25208AA878007FC3FA /* MPBackgroundStateManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MPBackgroundStateManager.mm; sourceTree = "<group>"; };
+		AFF6FF26208AA878007FC3FA /* MPMonotonicTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPMonotonicTime.h; sourceTree = "<group>"; };
+		AFF6FF27208AA879007FC3FA /* MPDynamicFrameworkLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDynamicFrameworkLoader.m; sourceTree = "<group>"; };
+		AFF6FF28208AA879007FC3FA /* MPLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLogger.h; sourceTree = "<group>"; };
+		AFF6FF29208AA879007FC3FA /* MPConcurrentQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPConcurrentQueue.m; sourceTree = "<group>"; };
+		AFF6FF2A208AA87A007FC3FA /* MPDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDefines.h; sourceTree = "<group>"; };
+		AFF6FF2B208AA87A007FC3FA /* FBMPObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBMPObserver.m; sourceTree = "<group>"; };
+		AFF6FF2C208AA87A007FC3FA /* MPSettings+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MPSettings+Internal.h"; sourceTree = "<group>"; };
+		AFF6FF2D208AA87A007FC3FA /* MPEventToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPEventToken.h; sourceTree = "<group>"; };
+		AFF6FF2E208AA87B007FC3FA /* MPNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPNotificationCenter.m; sourceTree = "<group>"; };
+		AFF6FF2F208AA87B007FC3FA /* MPVideoLoggingEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPVideoLoggingEvent.h; sourceTree = "<group>"; };
+		AFF6FF30208AA87B007FC3FA /* MPQualityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPQualityManager.h; sourceTree = "<group>"; };
+		AFF6FF31208AA87B007FC3FA /* MPConcurrentArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPConcurrentArray.h; sourceTree = "<group>"; };
+		AFF6FF32208AA87B007FC3FA /* MPConfigManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPConfigManager.m; sourceTree = "<group>"; };
+		AFF6FF33208AA87C007FC3FA /* MPPerformanceMetrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPPerformanceMetrics.m; sourceTree = "<group>"; };
+		AFF6FF34208AA87C007FC3FA /* MPBackgroundStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBackgroundStateManager.h; sourceTree = "<group>"; };
+		AFF6FF35208AA87C007FC3FA /* MPEndToEnd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPEndToEnd.m; sourceTree = "<group>"; };
+		AFF6FF36208AA87C007FC3FA /* MPDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDatabaseManager.h; sourceTree = "<group>"; };
+		AFF6FF37208AA87D007FC3FA /* MPConcurrentArray.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MPConcurrentArray.mm; sourceTree = "<group>"; };
+		AFF6FF38208AA87D007FC3FA /* MPConcurrentQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPConcurrentQueue.h; sourceTree = "<group>"; };
+		AFF6FF39208AA87D007FC3FA /* MPVideoLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPVideoLogger.h; sourceTree = "<group>"; };
+		AFF6FF3A208AA87D007FC3FA /* MPScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPScreen.m; sourceTree = "<group>"; };
+		AFF6FF3B208AA87E007FC3FA /* MPTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPTimer.m; sourceTree = "<group>"; };
+		AFF6FF3C208AA87E007FC3FA /* MPDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDatabaseManager.m; sourceTree = "<group>"; };
+		AFF6FF3D208AA87E007FC3FA /* MPQualityViewabilityMeasurement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPQualityViewabilityMeasurement.m; sourceTree = "<group>"; };
+		AFF6FF3E208AA87E007FC3FA /* MPQualityMetric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPQualityMetric.h; sourceTree = "<group>"; };
+		AFF6FF3F208AA87F007FC3FA /* MPURLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPURLSession.h; sourceTree = "<group>"; };
+		AFF6FF40208AA87F007FC3FA /* MPUtilityFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPUtilityFunctions.h; sourceTree = "<group>"; };
+		AFF6FF41208AA87F007FC3FA /* MPDynamicFrameworkLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDynamicFrameworkLoader.h; sourceTree = "<group>"; };
+		AFF6FF42208AA87F007FC3FA /* MPScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPScreen.h; sourceTree = "<group>"; };
+		AFF6FF43208AA87F007FC3FA /* FB_SDK_MP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FB_SDK_MP.h; sourceTree = "<group>"; };
+		AFF6FF44208AA880007FC3FA /* MPEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPEventManager.h; sourceTree = "<group>"; };
+		AFF6FF45208AA880007FC3FA /* MPAvailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAvailability.h; sourceTree = "<group>"; };
+		AFF6FF46208AA880007FC3FA /* MPQualityMetric.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPQualityMetric.m; sourceTree = "<group>"; };
+		AFF6FF47208AA880007FC3FA /* MPqualityTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPqualityTest.h; sourceTree = "<group>"; };
+		AFF6FF95208AA8CE007FC3FA /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFF6FFC1208AAA97007FC3FA /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AFF3C697208ABAA60033E05F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF3C6B0208ABB5B0033E05F /* FB_SDK_MP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AFF6FEF0208AA719007FC3FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF6FF92208AA8CE007FC3FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF60002208AACC2007FC3FA /* FB_SDK_MP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF6FFBE208AAA97007FC3FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -27,10 +260,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AFF3C69B208ABAA60033E05F /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				AFF3C69C208ABAA60033E05F /* AppDelegate.h */,
+				AFF3C69D208ABAA60033E05F /* AppDelegate.m */,
+				AFF3C69F208ABAA60033E05F /* ViewController.h */,
+				AFF3C6A0208ABAA60033E05F /* ViewController.m */,
+				AFF3C6A2208ABAA60033E05F /* Main.storyboard */,
+				AFF3C6A5208ABAA60033E05F /* Assets.xcassets */,
+				AFF3C6A7208ABAA60033E05F /* LaunchScreen.storyboard */,
+				AFF3C6AA208ABAA60033E05F /* Info.plist */,
+				AFF3C6AB208ABAA60033E05F /* main.m */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
 		AFF6FEEA208AA719007FC3FA = {
 			isa = PBXGroup;
 			children = (
+				AFF3C6B5208BD3840033E05F /* FB_SDK_MP.podspec */,
 				AFF6FEF6208AA719007FC3FA /* FB-SDK-MP */,
+				AFF3C69B208ABAA60033E05F /* Example */,
 				AFF6FEF5208AA719007FC3FA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +290,9 @@
 			isa = PBXGroup;
 			children = (
 				AFF6FEF4208AA719007FC3FA /* FB_SDK_MP.framework */,
+				AFF6FF95208AA8CE007FC3FA /* Demo.app */,
+				AFF6FFC1208AAA97007FC3FA /* test.app */,
+				AFF3C69A208ABAA60033E05F /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,8 +300,79 @@
 		AFF6FEF6208AA719007FC3FA /* FB-SDK-MP */ = {
 			isa = PBXGroup;
 			children = (
-				AFF6FEF7208AA719007FC3FA /* FB_SDK_MP.h */,
-				AFF6FEF8208AA719007FC3FA /* Info.plist */,
+				AFF6FF43208AA87F007FC3FA /* FB_SDK_MP.h */,
+				AFF6FF23208AA877007FC3FA /* FBMPObserver.h */,
+				AFF6FF2B208AA87A007FC3FA /* FBMPObserver.m */,
+				AFF6FF07208AA872007FC3FA /* Info.plist */,
+				AFF6FF45208AA880007FC3FA /* MPAvailability.h */,
+				AFF6FF34208AA87C007FC3FA /* MPBackgroundStateManager.h */,
+				AFF6FF25208AA878007FC3FA /* MPBackgroundStateManager.mm */,
+				AFF6FF1E208AA876007FC3FA /* MPBackgroundStateManaging.h */,
+				AFF6FF11208AA873007FC3FA /* MPBackgroundStateManaging.m */,
+				AFF6FF31208AA87B007FC3FA /* MPConcurrentArray.h */,
+				AFF6FF37208AA87D007FC3FA /* MPConcurrentArray.mm */,
+				AFF6FF38208AA87D007FC3FA /* MPConcurrentQueue.h */,
+				AFF6FF29208AA879007FC3FA /* MPConcurrentQueue.m */,
+				AFF6FF00208AA871007FC3FA /* MPConfigManager.h */,
+				AFF6FF32208AA87B007FC3FA /* MPConfigManager.m */,
+				AFF6FF36208AA87C007FC3FA /* MPDatabaseManager.h */,
+				AFF6FF3C208AA87E007FC3FA /* MPDatabaseManager.m */,
+				AFF6FF13208AA874007FC3FA /* MPDebugLogging.h */,
+				AFF6FF14208AA874007FC3FA /* MPDebugLogging.m */,
+				AFF6FF2A208AA87A007FC3FA /* MPDefines.h */,
+				AFF6FF06208AA872007FC3FA /* MPDefines+Internal.h */,
+				AFF6FF0D208AA873007FC3FA /* MPDefines+Internal.m */,
+				AFF6FF0E208AA873007FC3FA /* MPDevice.h */,
+				AFF6FF1F208AA876007FC3FA /* MPDevice.m */,
+				AFF6FF41208AA87F007FC3FA /* MPDynamicFrameworkLoader.h */,
+				AFF6FF27208AA879007FC3FA /* MPDynamicFrameworkLoader.m */,
+				AFF6FF1D208AA875007FC3FA /* MPEndToEnd.h */,
+				AFF6FF35208AA87C007FC3FA /* MPEndToEnd.m */,
+				AFF6FF12208AA873007FC3FA /* MPEvent.h */,
+				AFF6FF0B208AA873007FC3FA /* MPEvent.m */,
+				AFF6FF44208AA880007FC3FA /* MPEventManager.h */,
+				AFF6FF1A208AA875007FC3FA /* MPEventManager.mm */,
+				AFF6FF2D208AA87A007FC3FA /* MPEventToken.h */,
+				AFF6FF15208AA874007FC3FA /* MPEventToken.m */,
+				AFF6FF28208AA879007FC3FA /* MPLogger.h */,
+				AFF6FF08208AA872007FC3FA /* MPLogger.m */,
+				AFF6FF26208AA878007FC3FA /* MPMonotonicTime.h */,
+				AFF6FF02208AA871007FC3FA /* MPMonotonicTime.m */,
+				AFF6FF09208AA872007FC3FA /* MPNotificationCenter.h */,
+				AFF6FF2E208AA87B007FC3FA /* MPNotificationCenter.m */,
+				AFF6FF03208AA872007FC3FA /* MPPerformanceMetrics.h */,
+				AFF6FF33208AA87C007FC3FA /* MPPerformanceMetrics.m */,
+				AFF6FF30208AA87B007FC3FA /* MPQualityManager.h */,
+				AFF6FF22208AA877007FC3FA /* MPQualityManager.m */,
+				AFF6FF3E208AA87E007FC3FA /* MPQualityMetric.h */,
+				AFF6FF46208AA880007FC3FA /* MPQualityMetric.m */,
+				AFF6FF20208AA876007FC3FA /* MPQualityRule.h */,
+				AFF6FF01208AA871007FC3FA /* MPQualityRule.m */,
+				AFF6FF05208AA872007FC3FA /* MPQualityStatistics.h */,
+				AFF6FF16208AA874007FC3FA /* MPQualityStatistics.m */,
+				AFF6FF47208AA880007FC3FA /* MPqualityTest.h */,
+				AFF6FF19208AA875007FC3FA /* MPqualityTest.m */,
+				AFF6FF04208AA872007FC3FA /* MPQualityViewabilityMeasurement.h */,
+				AFF6FF3D208AA87E007FC3FA /* MPQualityViewabilityMeasurement.m */,
+				AFF6FF42208AA87F007FC3FA /* MPScreen.h */,
+				AFF6FF3A208AA87D007FC3FA /* MPScreen.m */,
+				AFF6FF1B208AA875007FC3FA /* MPSettings.h */,
+				AFF6FEFF208AA871007FC3FA /* MPSettings.m */,
+				AFF6FF2C208AA87A007FC3FA /* MPSettings+Internal.h */,
+				AFF6FF1C208AA875007FC3FA /* MPTimer.h */,
+				AFF6FF3B208AA87E007FC3FA /* MPTimer.m */,
+				AFF6FF3F208AA87F007FC3FA /* MPURLSession.h */,
+				AFF6FF17208AA874007FC3FA /* MPURLSession.m */,
+				AFF6FF21208AA877007FC3FA /* MPUtility.h */,
+				AFF6FF10208AA873007FC3FA /* MPUtility.m */,
+				AFF6FF40208AA87F007FC3FA /* MPUtilityFunctions.h */,
+				AFF6FF0A208AA872007FC3FA /* MPUtilityFunctions.m */,
+				AFF6FF39208AA87D007FC3FA /* MPVideoLogger.h */,
+				AFF6FF0C208AA873007FC3FA /* MPVideoLogger.m */,
+				AFF6FF2F208AA87B007FC3FA /* MPVideoLoggingEvent.h */,
+				AFF6FF0F208AA873007FC3FA /* MPVideoLoggingEvent.m */,
+				AFF6FF18208AA874007FC3FA /* MPVideoURLWrapper.h */,
+				AFF6FF24208AA878007FC3FA /* MPVideoURLWrapper.m */,
 			);
 			path = "FB-SDK-MP";
 			sourceTree = "<group>";
@@ -59,13 +384,69 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFF6FEF9208AA719007FC3FA /* FB_SDK_MP.h in Headers */,
+				AFF6FF4D208AA880007FC3FA /* MPQualityViewabilityMeasurement.h in Headers */,
+				AFF6FF5C208AA880007FC3FA /* MPDebugLogging.h in Headers */,
+				AFF6FF7F208AA880007FC3FA /* MPDatabaseManager.h in Headers */,
+				AFF6FF79208AA880007FC3FA /* MPQualityManager.h in Headers */,
+				AFF6FF61208AA880007FC3FA /* MPVideoURLWrapper.h in Headers */,
+				AFF6FF69208AA880007FC3FA /* MPQualityRule.h in Headers */,
+				AFF6FF4F208AA880007FC3FA /* MPDefines+Internal.h in Headers */,
+				AFF6FF81208AA880007FC3FA /* MPConcurrentQueue.h in Headers */,
+				AFF6FF8D208AA880007FC3FA /* MPEventManager.h in Headers */,
+				AFF6FF71208AA880007FC3FA /* MPLogger.h in Headers */,
+				AFF6FF64208AA880007FC3FA /* MPSettings.h in Headers */,
+				AFF6FF65208AA880007FC3FA /* MPTimer.h in Headers */,
+				AFF6FF7D208AA880007FC3FA /* MPBackgroundStateManager.h in Headers */,
+				AFF6FF6F208AA880007FC3FA /* MPMonotonicTime.h in Headers */,
+				AFF6FF8B208AA880007FC3FA /* MPScreen.h in Headers */,
+				AFF6FF67208AA880007FC3FA /* MPBackgroundStateManaging.h in Headers */,
+				AFF6FF52208AA880007FC3FA /* MPNotificationCenter.h in Headers */,
+				AFF6FF4E208AA880007FC3FA /* MPQualityStatistics.h in Headers */,
+				AFF6FF8C208AA880007FC3FA /* FB_SDK_MP.h in Headers */,
+				AFF6FF57208AA880007FC3FA /* MPDevice.h in Headers */,
+				AFF6FF6A208AA880007FC3FA /* MPUtility.h in Headers */,
+				AFF6FF87208AA880007FC3FA /* MPQualityMetric.h in Headers */,
+				AFF6FF6C208AA880007FC3FA /* FBMPObserver.h in Headers */,
+				AFF6FF78208AA880007FC3FA /* MPVideoLoggingEvent.h in Headers */,
+				AFF6FF7A208AA880007FC3FA /* MPConcurrentArray.h in Headers */,
+				AFF6FF49208AA880007FC3FA /* MPConfigManager.h in Headers */,
+				AFF6FF88208AA880007FC3FA /* MPURLSession.h in Headers */,
+				AFF6FF90208AA880007FC3FA /* MPqualityTest.h in Headers */,
+				AFF6FF76208AA880007FC3FA /* MPEventToken.h in Headers */,
+				AFF6FF73208AA880007FC3FA /* MPDefines.h in Headers */,
+				AFF6FF82208AA880007FC3FA /* MPVideoLogger.h in Headers */,
+				AFF6FF5B208AA880007FC3FA /* MPEvent.h in Headers */,
+				AFF6FF8A208AA880007FC3FA /* MPDynamicFrameworkLoader.h in Headers */,
+				AFF6FF89208AA880007FC3FA /* MPUtilityFunctions.h in Headers */,
+				AFF6FF8E208AA880007FC3FA /* MPAvailability.h in Headers */,
+				AFF6FF66208AA880007FC3FA /* MPEndToEnd.h in Headers */,
+				AFF6FF4C208AA880007FC3FA /* MPPerformanceMetrics.h in Headers */,
+				AFF6FF75208AA880007FC3FA /* MPSettings+Internal.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		AFF3C699208ABAA60033E05F /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFF3C6AD208ABAA60033E05F /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				AFF3C696208ABAA60033E05F /* Sources */,
+				AFF3C697208ABAA60033E05F /* Frameworks */,
+				AFF3C698208ABAA60033E05F /* Resources */,
+				AFF3C6B4208ABB5C0033E05F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFF3C6B3208ABB5C0033E05F /* PBXTargetDependency */,
+			);
+			name = Example;
+			productName = Example;
+			productReference = AFF3C69A208ABAA60033E05F /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 		AFF6FEF3208AA719007FC3FA /* FB-SDK-MP */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFF6FEFC208AA719007FC3FA /* Build configuration list for PBXNativeTarget "FB-SDK-MP" */;
@@ -84,6 +465,42 @@
 			productReference = AFF6FEF4208AA719007FC3FA /* FB_SDK_MP.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		AFF6FF94208AA8CE007FC3FA /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFF6FFA8208AA8CE007FC3FA /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				AFF6FF91208AA8CE007FC3FA /* Sources */,
+				AFF6FF92208AA8CE007FC3FA /* Frameworks */,
+				AFF6FF93208AA8CE007FC3FA /* Resources */,
+				AFF60006208AACC3007FC3FA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFF60005208AACC2007FC3FA /* PBXTargetDependency */,
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = AFF6FF95208AA8CE007FC3FA /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFF6FFC0208AAA97007FC3FA /* test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFF6FFD4208AAA98007FC3FA /* Build configuration list for PBXNativeTarget "test" */;
+			buildPhases = (
+				AFF6FFBD208AAA97007FC3FA /* Sources */,
+				AFF6FFBE208AAA97007FC3FA /* Frameworks */,
+				AFF6FFBF208AAA97007FC3FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = test;
+			productName = test;
+			productReference = AFF6FFC1208AAA97007FC3FA /* test.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,7 +510,19 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Weiwei Jiang";
 				TargetAttributes = {
+					AFF3C699208ABAA60033E05F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					AFF6FEF3208AA719007FC3FA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					AFF6FF94208AA8CE007FC3FA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					AFF6FFC0208AAA97007FC3FA = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -105,6 +534,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = AFF6FEEA208AA719007FC3FA;
 			productRefGroup = AFF6FEF5208AA719007FC3FA /* Products */;
@@ -112,12 +542,42 @@
 			projectRoot = "";
 			targets = (
 				AFF6FEF3208AA719007FC3FA /* FB-SDK-MP */,
+				AFF6FF94208AA8CE007FC3FA /* Demo */,
+				AFF6FFC0208AAA97007FC3FA /* test */,
+				AFF3C699208ABAA60033E05F /* Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AFF3C698208ABAA60033E05F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF3C6A9208ABAA60033E05F /* LaunchScreen.storyboard in Resources */,
+				AFF3C6A6208ABAA60033E05F /* Assets.xcassets in Resources */,
+				AFF3C6A4208ABAA60033E05F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AFF6FEF2208AA719007FC3FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF3C6B6208BD3850033E05F /* FB_SDK_MP.podspec in Resources */,
+				AFF6FF50208AA880007FC3FA /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF6FF93208AA8CE007FC3FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF3C6B7208BD3850033E05F /* FB_SDK_MP.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF6FFBF208AAA97007FC3FA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -127,7 +587,65 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AFF3C696208ABAA60033E05F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF3C6A1208ABAA60033E05F /* ViewController.m in Sources */,
+				AFF3C6AC208ABAA60033E05F /* main.m in Sources */,
+				AFF3C69E208ABAA60033E05F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AFF6FEEF208AA719007FC3FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF6FF77208AA880007FC3FA /* MPNotificationCenter.m in Sources */,
+				AFF6FF7E208AA880007FC3FA /* MPEndToEnd.m in Sources */,
+				AFF6FF80208AA880007FC3FA /* MPConcurrentArray.mm in Sources */,
+				AFF6FF68208AA880007FC3FA /* MPDevice.m in Sources */,
+				AFF6FF83208AA880007FC3FA /* MPScreen.m in Sources */,
+				AFF6FF84208AA880007FC3FA /* MPTimer.m in Sources */,
+				AFF6FF6B208AA880007FC3FA /* MPQualityManager.m in Sources */,
+				AFF6FF62208AA880007FC3FA /* MPqualityTest.m in Sources */,
+				AFF6FF63208AA880007FC3FA /* MPEventManager.mm in Sources */,
+				AFF6FF5E208AA880007FC3FA /* MPEventToken.m in Sources */,
+				AFF6FF5F208AA880007FC3FA /* MPQualityStatistics.m in Sources */,
+				AFF6FF60208AA880007FC3FA /* MPURLSession.m in Sources */,
+				AFF6FF55208AA880007FC3FA /* MPVideoLogger.m in Sources */,
+				AFF6FF7C208AA880007FC3FA /* MPPerformanceMetrics.m in Sources */,
+				AFF6FF70208AA880007FC3FA /* MPDynamicFrameworkLoader.m in Sources */,
+				AFF6FF6E208AA880007FC3FA /* MPBackgroundStateManager.mm in Sources */,
+				AFF6FF59208AA880007FC3FA /* MPUtility.m in Sources */,
+				AFF6FF86208AA880007FC3FA /* MPQualityViewabilityMeasurement.m in Sources */,
+				AFF6FF8F208AA880007FC3FA /* MPQualityMetric.m in Sources */,
+				AFF6FF4A208AA880007FC3FA /* MPQualityRule.m in Sources */,
+				AFF6FF56208AA880007FC3FA /* MPDefines+Internal.m in Sources */,
+				AFF6FF54208AA880007FC3FA /* MPEvent.m in Sources */,
+				AFF6FF74208AA880007FC3FA /* FBMPObserver.m in Sources */,
+				AFF6FF48208AA880007FC3FA /* MPSettings.m in Sources */,
+				AFF6FF5D208AA880007FC3FA /* MPDebugLogging.m in Sources */,
+				AFF6FF53208AA880007FC3FA /* MPUtilityFunctions.m in Sources */,
+				AFF6FF72208AA880007FC3FA /* MPConcurrentQueue.m in Sources */,
+				AFF6FF7B208AA880007FC3FA /* MPConfigManager.m in Sources */,
+				AFF6FF51208AA880007FC3FA /* MPLogger.m in Sources */,
+				AFF6FF85208AA880007FC3FA /* MPDatabaseManager.m in Sources */,
+				AFF6FF58208AA880007FC3FA /* MPVideoLoggingEvent.m in Sources */,
+				AFF6FF4B208AA880007FC3FA /* MPMonotonicTime.m in Sources */,
+				AFF6FF6D208AA880007FC3FA /* MPVideoURLWrapper.m in Sources */,
+				AFF6FF5A208AA880007FC3FA /* MPBackgroundStateManaging.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF6FF91208AA8CE007FC3FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF6FFBD208AAA97007FC3FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -136,7 +654,67 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AFF3C6B3208ABB5C0033E05F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFF6FEF3208AA719007FC3FA /* FB-SDK-MP */;
+			targetProxy = AFF3C6B2208ABB5C0033E05F /* PBXContainerItemProxy */;
+		};
+		AFF60005208AACC2007FC3FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFF6FEF3208AA719007FC3FA /* FB-SDK-MP */;
+			targetProxy = AFF60004208AACC2007FC3FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AFF3C6A2208ABAA60033E05F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFF3C6A3208ABAA60033E05F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AFF3C6A7208ABAA60033E05F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFF3C6A8208ABAA60033E05F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		AFF3C6AE208ABAA60033E05F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9WTTPBFK9;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = facebook.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFF3C6AF208ABAA60033E05F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9WTTPBFK9;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = facebook.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		AFF6FEFA208AA719007FC3FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -186,7 +764,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -238,7 +816,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -262,7 +840,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "facebook.FB-SDK-MP";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -282,7 +860,65 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "facebook.FB-SDK-MP";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFF6FFA9208AA8CE007FC3FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9WTTPBFK9;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = facebook.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFF6FFAA208AA8CE007FC3FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9WTTPBFK9;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = facebook.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFF6FFD5208AAA98007FC3FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9WTTPBFK9;
+				INFOPLIST_FILE = test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = facebook.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFF6FFD6208AAA98007FC3FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9WTTPBFK9;
+				INFOPLIST_FILE = test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = facebook.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -290,6 +926,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AFF3C6AD208ABAA60033E05F /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFF3C6AE208ABAA60033E05F /* Debug */,
+				AFF3C6AF208ABAA60033E05F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AFF6FEEE208AA719007FC3FA /* Build configuration list for PBXProject "FB-SDK-MP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -304,6 +949,24 @@
 			buildConfigurations = (
 				AFF6FEFD208AA719007FC3FA /* Debug */,
 				AFF6FEFE208AA719007FC3FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFF6FFA8208AA8CE007FC3FA /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFF6FFA9208AA8CE007FC3FA /* Debug */,
+				AFF6FFAA208AA8CE007FC3FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFF6FFD4208AAA98007FC3FA /* Build configuration list for PBXNativeTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFF6FFD5208AAA98007FC3FA /* Debug */,
+				AFF6FFD6208AAA98007FC3FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

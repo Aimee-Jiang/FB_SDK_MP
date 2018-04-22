@@ -20,7 +20,18 @@
 @import AVFoundation;
 
 @interface FBMPObserver : NSObject
+/*
+ * Initialization using singleton pattern.
+ * It's a must since observer is weak reference in iOS 9.0+, which
+ * means observer will be recycled after registeration.
+ */
 + (instancetype)shareInstance;
+
+/**
+* @brief register objects wrapped in a dictionary to activate SDK measurement plugin
+*
+* @param dict an NSDictionary containing keys of @"player" and @"playerView"
+*/
 - (void)registerObjects:(NSDictionary *)dict;
 @end
 

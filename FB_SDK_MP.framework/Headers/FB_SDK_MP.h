@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "FBMPObserver.h"
 #import "MPAvailability.h"
 #import "MPBackgroundStateManager.h"
 #import "MPBackgroundStateManaging.h"
@@ -29,7 +30,6 @@
 #import "MPLogger.h"
 #import "MPMonotonicTime.h"
 #import "MPNotificationCenter.h"
-#import "FBMPObserver.h"
 #import "MPPerformanceMetrics.h"
 #import "MPQualityManager.h"
 #import "MPQualityMetric.h"

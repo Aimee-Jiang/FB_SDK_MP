@@ -1,0 +1,6 @@
+framework module FB_SDK_MP {
+  umbrella header "FB_SDK_MP.h"
+
+  export *
+  module * { export * }
+}

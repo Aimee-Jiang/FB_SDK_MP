@@ -69,12 +69,11 @@
 		AFF6FF77208AA880007FC3FA /* MPNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF2E208AA87B007FC3FA /* MPNotificationCenter.m */; };
 		AFF6FF78208AA880007FC3FA /* MPVideoLoggingEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF2F208AA87B007FC3FA /* MPVideoLoggingEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AFF6FF79208AA880007FC3FA /* MPQualityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF30208AA87B007FC3FA /* MPQualityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AFF6FF7A208AA880007FC3FA /* MPConcurrentArray.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF31208AA87B007FC3FA /* MPConcurrentArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AFF6FF7B208AA880007FC3FA /* MPConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF32208AA87B007FC3FA /* MPConfigManager.m */; };
 		AFF6FF7C208AA880007FC3FA /* MPPerformanceMetrics.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF33208AA87C007FC3FA /* MPPerformanceMetrics.m */; };
-		AFF6FF7D208AA880007FC3FA /* MPBackgroundStateManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF34208AA87C007FC3FA /* MPBackgroundStateManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF7D208AA880007FC3FA /* MPBackgroundStateManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF34208AA87C007FC3FA /* MPBackgroundStateManager.h */; };
 		AFF6FF7E208AA880007FC3FA /* MPEndToEnd.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF35208AA87C007FC3FA /* MPEndToEnd.m */; };
-		AFF6FF7F208AA880007FC3FA /* MPDatabaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF36208AA87C007FC3FA /* MPDatabaseManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF6FF7F208AA880007FC3FA /* MPDatabaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF36208AA87C007FC3FA /* MPDatabaseManager.h */; };
 		AFF6FF80208AA880007FC3FA /* MPConcurrentArray.mm in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF37208AA87D007FC3FA /* MPConcurrentArray.mm */; };
 		AFF6FF81208AA880007FC3FA /* MPConcurrentQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF38208AA87D007FC3FA /* MPConcurrentQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AFF6FF82208AA880007FC3FA /* MPVideoLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF39208AA87D007FC3FA /* MPVideoLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -89,7 +88,6 @@
 		AFF6FF8B208AA880007FC3FA /* MPScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF42208AA87F007FC3FA /* MPScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AFF6FF8C208AA880007FC3FA /* FB_SDK_MP.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF43208AA87F007FC3FA /* FB_SDK_MP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AFF6FF8D208AA880007FC3FA /* MPEventManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF44208AA880007FC3FA /* MPEventManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AFF6FF8E208AA880007FC3FA /* MPAvailability.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF45208AA880007FC3FA /* MPAvailability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AFF6FF8F208AA880007FC3FA /* MPQualityMetric.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6FF46208AA880007FC3FA /* MPQualityMetric.m */; };
 		AFF6FF90208AA880007FC3FA /* MPqualityTest.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6FF47208AA880007FC3FA /* MPqualityTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -408,7 +406,6 @@
 				AFF6FF87208AA880007FC3FA /* MPQualityMetric.h in Headers */,
 				AFF6FF6C208AA880007FC3FA /* FBMPObserver.h in Headers */,
 				AFF6FF78208AA880007FC3FA /* MPVideoLoggingEvent.h in Headers */,
-				AFF6FF7A208AA880007FC3FA /* MPConcurrentArray.h in Headers */,
 				AFF6FF49208AA880007FC3FA /* MPConfigManager.h in Headers */,
 				AFF6FF88208AA880007FC3FA /* MPURLSession.h in Headers */,
 				AFF6FF90208AA880007FC3FA /* MPqualityTest.h in Headers */,
@@ -418,7 +415,6 @@
 				AFF6FF5B208AA880007FC3FA /* MPEvent.h in Headers */,
 				AFF6FF8A208AA880007FC3FA /* MPDynamicFrameworkLoader.h in Headers */,
 				AFF6FF89208AA880007FC3FA /* MPUtilityFunctions.h in Headers */,
-				AFF6FF8E208AA880007FC3FA /* MPAvailability.h in Headers */,
 				AFF6FF66208AA880007FC3FA /* MPEndToEnd.h in Headers */,
 				AFF6FF4C208AA880007FC3FA /* MPPerformanceMetrics.h in Headers */,
 				AFF6FF75208AA880007FC3FA /* MPSettings+Internal.h in Headers */,

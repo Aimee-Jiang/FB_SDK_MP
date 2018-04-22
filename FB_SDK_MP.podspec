@@ -8,8 +8,8 @@ Pod::Spec.new do |s|
     s.license           = { :type => 'MIT', :file => 'LICENSE' }
 
     s.platform          = :ios
-    s.source            = { :git => 'https://github.com/Aimee-Jiang/FB_SDK_MP/blob/master/FB_SDK_MP.zip', :tag => s.version.to_s }
+    s.source            = { :git => 'https://github.com/Aimee-Jiang/FB_SDK_MP.git', :tag => s.version.to_s }
     s.ios.deployment_target = '8.0'
     s.ios.vendored_frameworks = 'FB_SDK_MP.framework'
-    s.ios.public_header_files  = 'CastlabsSDK.framework/Versions/A/Headers/*.h'
+    # s.ios.public_header_files  = 'FB_SDK_MP.framework/Headers/*.h'
 end  
